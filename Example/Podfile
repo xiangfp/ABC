@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'ABC_Example', :exclusive => true do
+  pod "ABC", :path => "../"
+end
+
+target 'ABC_Tests', :exclusive => true do
+  pod "ABC", :path => "../"
+  pod 'AFNetworking'
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
